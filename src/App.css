@@ -149,3 +149,43 @@ p {
   box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
   background: linear-gradient(145deg, #ee5a24, #ff6b6b);
 }
+.start-btn {
+  padding: 18px 36px;
+  font-size: 1.4em;
+  font-weight: bold;
+  background: linear-gradient(145deg, #ffd700 0%, #ffed4e 100%);
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 
+    0 8px 25px rgba(255, 215, 0, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.start-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 
+    0 12px 35px rgba(255, 215, 0, 0.6),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(145deg, #ffed4e 0%, #ffd700 100%);
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 
+      0 8px 25px rgba(255, 215, 0, 0.4),
+      inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    box-shadow: 
+      0 8px 25px rgba(255, 215, 0, 0.7),
+      inset 0 2px 4px rgba(255, 255, 255, 0.3),
+      0 0 20px rgba(255, 215, 0, 0.5);
+  }
+}
